@@ -98,11 +98,6 @@
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 
-    .solar-kits .product-card {
-        width: 100%;
-        max-width: 300px;
-    }
-
     .product-card .img-container {
         height: 200px;
     }

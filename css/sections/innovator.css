@@ -1,0 +1,141 @@
+.innovator {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+
+    width: 100%;
+    height: auto;
+    padding: 50px;
+}
+
+.innovator .approach {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+
+    width: 260px;
+    height: 100%;
+    padding: 5px;
+    
+    border: solid 1px rgba(211, 211, 211, 0.199);
+    border-radius: 10px;
+}
+
+.approach span {
+    width: 50px;
+    height: 50px;
+
+    background-color: var(--color-primary);
+    border-radius: 10px;
+}
+
+.approach span img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.approach h1 {
+    font-size: large;
+}
+
+.approach p {
+    color: var(--gray-600);
+}
+
+.integrations {
+    flex: 1;
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    gap: 20px;
+
+    height: 100%;
+}
+
+.integrations .integration-card {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    width: 100%;
+    max-width: 300px;
+    padding: 20px;
+
+    border: solid 1px rgba(211, 211, 211, 0.712);
+    border-radius: 15px;
+}
+
+.integration-card .img-container {
+    width: 100%;
+    height: 100px;
+}
+
+.integration-card .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.integration-card .card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.integration-card h2 {
+    font-size: large;
+}
+
+.integration-card p {
+    color: var(--gray-600);
+    font-size: small;
+}
+
+.integration-card a {
+    width: fit-content;
+}
+
+.integration-card a:hover {
+    color: lightseagreen;
+    
+}
+
+
+
+/* ========== Media Query ========== */
+
+@media (min-width: 768px) {
+    .innovator {
+        padding: 110px 100px;
+        flex-direction: row;
+    }
+
+    .innovator .approach {
+        width: 360px;
+        align-self: self-start;
+    }
+
+    .approach h1 {
+        font-size: x-large;
+    }
+
+    .integrations {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .integration-card h2 {
+        font-size: x-large;
+    }
+
+    .integration-card p {
+        font-size: medium;
+    }
+
+}
