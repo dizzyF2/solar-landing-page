@@ -1,0 +1,65 @@
+@import url('./layouts/header.css');
+@import url('./sections/hero.css');
+@import url('./sections/service.css');
+@import url('./sections/contact.css');
+@import url('./sections/solarKits.css');
+@import url('./sections/repair.css');
+@import url('./sections/innovator.css');
+@import url('./sections/values.css');
+@import url('./sections/testimonials.css');
+@import url('./layouts/footer.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-primary: 'Inter', sans-serif;
+    --font-size-base: 16px;
+
+    --color-primary: #3CAB90;
+    --amber-yellow-100:  #FFBB1C;
+    --amber-yellow-200:  #faaf00;
+    --slate-navy:    #283646;
+    --teal-header:   #0B9586;
+    --gray-600:      #475467;
+    --lime-green:    #84BD3A;
+
+    /* Spacing */
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 32px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ========== Media Query ========== */
+
+/* small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /* Tablet styles */
+}
+
+/* Large devices (laptops, 992px and up) */
+@media (min-width: 992px) {
+  /* Laptop styles */
+}
+
+/* Extra large devices (desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* Desktop styles */
+}
+
+/* Extra-extra large devices (very large desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  /* Ultra-wide styles */
+}

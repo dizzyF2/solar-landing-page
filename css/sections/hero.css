@@ -1,0 +1,93 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+
+    background-image: url("../../assets/hero-image.png");
+    background-size: contain;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+    width: 100%;
+    height: 250px;
+    padding: 50px;
+    color: white;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 10px;
+    width: 80%;
+}
+
+.hero-content h1{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hero-content h3{
+    font-size: small;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.buttons button {
+    border: none;
+    padding: 5px;
+    border-radius: 50px;
+    font-size: x-small;
+    cursor: pointer;
+}
+
+.buttons .call-button {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.buttons .request-button {
+    background-color: var(--amber-yellow-100);
+    color: black;
+}
+
+.buttons .request-button:hover {
+    background-color: var(--amber-yellow-200);
+}
+
+
+/* ========== Media Query ========== */
+
+@media (min-width: 768px) {
+
+    .hero {
+        height: 550px;
+        gap: 100px;
+        padding: 100px;
+    }
+
+    .hero-content {
+    width: 50%;
+    }
+
+    .hero-content h1{
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .hero-content h3{
+        font-size: medium;
+        font-weight: bold;
+    }
+
+    .buttons button {
+        padding: 10px;
+        font-size: small;
+    }
+}

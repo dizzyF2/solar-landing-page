@@ -1,0 +1,43 @@
+.solar-kits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 80%;
+    height: 250px;;
+    padding: 30px 0;
+    margin: 0 auto;
+    border: solid 2px red;
+}
+
+.solar-kits .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    text-align: center;
+    border: solid 2px green;
+    margin: 0 10%;
+    padding: 0 20px;
+}
+
+.solar-kits .title h1 {
+    
+}
+
+.solar-kits .title p {
+    
+}
+
+
+/* ========== Media Query ========== */
+
+@media (min-width: 768px) {
+    
+    .solar-kits {
+        width: 85%;
+        height: 550px;
+    }
+
+}

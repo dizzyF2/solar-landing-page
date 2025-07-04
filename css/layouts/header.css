@@ -1,0 +1,105 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--teal-header);
+    color: white;
+
+    width: 100%;
+    padding: 0 50px;
+}
+
+header .logo {
+    width: 150px;
+    height: 45px;
+}
+
+header .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header nav {
+    display: none;
+    width: 40%;
+}
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header nav ul li {
+    cursor: pointer;
+    font-size: large;
+    padding: 8px;
+}
+header nav ul li:hover {
+    background-color: rgba(92, 92, 92, 0.404);
+    border-bottom: solid 2px var(--slate-navy);
+}
+
+header .call {
+    display: none;
+    height:40px;
+    width: fit-content;
+    cursor: pointer;
+    color: white;
+}
+
+header .call:hover {
+    color: rgb(216, 213, 213);
+}
+
+header .call p{
+    font-size: small;
+}
+
+header .call span {
+    font-size: large;
+    font-weight: bold;
+}
+
+header .menu {
+    display:block;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+header .menu:hover {
+    background: rgba(211, 211, 211, 0.397);
+    border-radius: 50%;
+}
+
+header .menu img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ========== Media Query ========== */
+
+@media (min-width: 768px) {
+    header {
+        justify-content: space-around;
+        padding: 5px 10px;
+    }
+
+    header nav {
+        display: block;
+    }
+
+    header .call {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    header .menu {
+        display:none;
+    }
+}
