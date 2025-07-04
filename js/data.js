@@ -38,3 +38,21 @@ const integrations = [
         image: "./assets/placeholder.png"
     },
 ];
+
+const values = [
+    {
+        title: "Customer Care",
+        desc: `We're here to help you with solar panel installation in Devon and Cornwall. If we were to sum ourselves up in a few words, those would be "reliable, honest and friendly." We find our customers agree! We're with you from the start of the project to the finish.`,
+        icon: "./assets/icons/Customer-Loyalty.png"
+    },
+    {
+        title: "Price",
+        desc: `As I'm sure you'll have seen, solar systems don't tend to come cheap. Our aim is to make solar power accessible to everyone, so we price ourselves in a way that makes solar energy more affordable. We're focused on helping you and on helping the environment, rather than on turning a profit.`,
+        icon: "./assets/icons/Price-Tag.png"
+    },
+    {
+        title: "Sustainability",
+        desc: `As we've said, we do this because we truly care about the planet and about seeing people embrace a greener, more eco-friendly approach to power. The world of green energy can be jargon-filled and opaque, so we want to help educate people on the big and little things they can do to protect our planet!`,
+        icon: "./assets/icons/Environment.png"
+    }
+]

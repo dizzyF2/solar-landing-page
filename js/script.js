@@ -37,3 +37,24 @@ integrations.forEach(integration => {
 
     integrationList.appendChild(clone);
 });
+
+
+
+const valueTemplate = document.getElementById("valueTemplate");
+const valueList = document.getElementById("valueList");
+
+valueTemplate.style.display = "none";
+
+values.forEach((item) => {
+    const clone = valueTemplate.cloneNode(true);
+    clone.classList.remove("template");
+    clone.removeAttribute("id");
+    clone.style.display = "flex";
+
+    clone.querySelector("img").src = item.icon;
+    clone.querySelector("img").alt = item.title;
+    clone.querySelector(".value-title").textContent = item.title;
+    clone.querySelector(".value-desc").textContent = item.desc;
+
+    valueList.appendChild(clone);
+});
