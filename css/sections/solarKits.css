@@ -66,6 +66,10 @@
     padding: 10px;
 }
 
+.card-content a {
+    width: fit-content;
+}
+
 .product-card .card-content a:hover {
     color: lightseagreen;
     
