@@ -1,0 +1,155 @@
+.testimonials {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+
+    width: 100%;
+    height: auto;
+    padding: 50px;
+}
+
+.testimonials .about-us {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+
+    width: 260px;
+    height: 100%;
+    padding: 5px;
+    
+    border: solid 1px rgba(211, 211, 211, 0.199);
+    border-radius: 10px;
+}
+
+.about-us span {
+    width: 50px;
+    height: 50px;
+}
+
+.about-us span img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-us h1 {
+    font-size: large;
+}
+
+.about-us p {
+    color: var(--gray-600);
+}
+
+.about-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+    padding: 20px;
+
+    background-color: var(--bg-card);
+    border: solid 1px var(--color-primary);
+    border-radius: 5px;
+}
+
+.about-card .about-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.about-title .swap-dots {
+    font-size: x-large;
+    color: gray;
+    cursor: pointer;
+}
+
+.about-title .swap-dots span {
+    color: black;
+}
+
+.about-card .desc {
+    color: var(--gray-600);
+}
+
+.about-card .card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.card-footer .user-content{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+}
+
+.user-content .img-container {
+    width: 50px;
+    height: 50px;
+}
+
+.user-content .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.user-content .user-info p{
+    font-size: small;
+    color: var(--gray-600);
+}
+
+.card-footer .arrows {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    width: 80px;
+}
+
+.card-footer .arrows img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.card-footer .arrows img:hover {
+    background-color: rgba(0, 0, 0, 0.116);
+}
+
+
+
+
+
+
+
+/* ========== Media Query ========== */
+
+@media (min-width: 768px) {
+    .testimonials {
+        padding: 110px 100px;
+        flex-direction: row;
+    }
+
+    .testimonials .about-us {
+        width: 360px;
+        align-self: self-start;
+    }
+
+    .about-us h1 {
+        font-size: x-large;
+    }
+}

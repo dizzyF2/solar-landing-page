@@ -48,8 +48,8 @@
     max-width: 300px;
     padding: 20px;
 
-    background-color: #3CAB900D;
-    border: solid 1px #3CAB90;
+    background-color: var(--bg-card);
+    border: solid 1px var(--color-primary);
     border-radius: 5px;
 }
 
