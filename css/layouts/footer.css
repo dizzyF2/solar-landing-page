@@ -47,6 +47,8 @@ footer {
 
 .quick-links nav ul li {
     cursor: pointer;
+    font-size: small;
+    text-transform: capitalize;
 }
 
 .quick-links nav ul li:hover {
@@ -111,6 +113,10 @@ footer {
     width: 100%;
 }
 
+.copyrights p {
+    font-size: xx-small;
+}
+
 
 /* ========== Media Query ========== */
 
@@ -127,5 +133,14 @@ footer {
     .quick-links .img-container {
         align-self: self-start;
     }
+
+    .quick-links nav ul li {
+        font-size: medium;
+    }
+
+    .copyrights p {
+        font-size: medium;
+    }
+
 
 }

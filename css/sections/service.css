@@ -20,13 +20,14 @@
 }
 
 .service-content h1 {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
 }
 
 .service-content p {
     color: var(--gray-600);
     font-size: x-small;
+    line-height: 10px;
 }
 
 .service-content ul {
@@ -54,8 +55,8 @@
 
 .services-visual .yellow-box {
     position: absolute;
-    width: 100px;
-    height: 75px;
+    width: 60px;
+    height: 55px;
     z-index: 1;
     bottom: 10px;
     left: 0px;
@@ -89,6 +90,7 @@
 
     .service-content p {
         font-size: medium;
+            line-height: normal;
     }
 
     .service-content ul {

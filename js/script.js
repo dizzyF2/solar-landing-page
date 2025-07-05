@@ -1,4 +1,20 @@
+ /*  header mobile nav bar */
 
+const menuBtn = document.querySelector('.menu');
+const mobileNav = document.querySelector('.mobile-nav');
+
+menuBtn.addEventListener('click', () => {
+    mobileNav.classList.toggle('show');
+});
+
+document.addEventListener('click', (e) => {
+    if (!menuBtn.contains(e.target) && !mobileNav.contains(e.target)) {
+        mobileNav.classList.remove('show');
+    }
+});
+
+
+ /*  Solar kits section */
 const template = document.getElementById("productTemplate");
 const productList = document.getElementById("productList");
 
@@ -19,6 +35,7 @@ solarKitsProducts.forEach((product) => {
 });
 
 
+ /*  Innovator section */
 const integrationTemplate = document.getElementById("integrationTemplate");
 const integrationList = document.getElementById("integrationList");
 
@@ -39,7 +56,7 @@ integrations.forEach(integration => {
 });
 
 
-
+ /*  Values section */
 const valueTemplate = document.getElementById("valueTemplate");
 const valueList = document.getElementById("valueList");
 
